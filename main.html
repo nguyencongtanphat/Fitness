@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/imgs/logo1.png" type="image/icon type" />
+    <link
+      rel="stylesheet"
+      href="./assets/icon/fontawesome-free-5.15.3-web/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/responsive.css" />
+    <title>Fitness app</title>
+  </head>
+  <body>
+    <div class="main">
+      <header class="header">
+        <h1 class="header_heading">FITNESS APP</h1>
+        <h2 class="header_part_desc">Lower Part</h2>
+      </header>
+      <div class="body">
+        <ul class="list_exercises">
+          <li class="exercise_item">
+            <span
+              value="Air Squat"
+              class="exercise_item_process"
+              introduce="./assets/imgs/Air-Squat.gif"
+            ></span>
+          </li>
+          <li class="exercise_item">
+            <span
+              value="Kneeling Squat "
+              class="exercise_item_process"
+              introduce="./assets/imgs/kneeling_squat_ jump.gif"
+            ></span>
+          </li>
+          <li class="exercise_item">
+            <span
+              value="Jump Squat"
+              class="exercise_item_process"
+              introduce="./assets/imgs/jump squat.gif"
+            ></span>
+          </li>
+          <li class="exercise_item">
+            <span
+              value="Jump Squat (in and out)"
+              class="exercise_item_process"
+              introduce="./assets/imgs/in-n-out-squat-jump.gif"
+            ></span>
+          </li>
+          <li class="exercise_item">
+            <span
+              value="Lunges Back & Forth-Left-"
+              class="exercise_item_process"
+              introduce="./assets/imgs/lung squat left.gif"
+            ></span>
+          </li>
+          <li class="exercise_item">
+            <span
+              value="Lunges Back & Forth-Right-"
+              class="exercise_item_process"
+              introduce="./assets/imgs/lung squat left.gif"
+            ></span>
+          </li>
+          <li class="exercise_item">
+            <span
+              value="Crab Walk"
+              class="exercise_item_process"
+              introduce="./assets/imgs/Crab-Walks.gif"
+            ></span>
+          </li>
+          <li class="exercise_item">
+            <span
+              value="Single-Leg-Glute-Bridge-left-"
+              class="exercise_item_process"
+              introduce="./assets/imgs/Single-Leg-Glute-Bridges-left.gif"
+            ></span>
+          </li>
+          <li class="exercise_item">
+            <span
+              value="Single-Leg-Glute-Bridge-right-"
+              class="exercise_item_process"
+              introduce="./assets/imgs/Single-Leg-Glute-Bridges-right.gif"
+            ></span>
+          </li>
+          <li class="exercise_item">
+            <span
+              value="Bunny Hops"
+              class="exercise_item_process"
+              introduce="./assets/imgs/bunny hops.gif"
+            ></span>
+          </li>
+        </ul>
+
+        <div class="time">
+          <div class="time_start btn">Start</div>
+          <div class="counter_practice"></div>
+
+          <div class="adjustment">
+            <div class="time_pause btn">Pause</div>
+            <div class="time_Continue btn">Continue</div>
+          </div>
+          <h2 class="exercise_name"></h2>
+          <div class="introduce"></div>
+        </div>
+
+        <div class="relax">
+          <div class="counter_relax"></div>
+
+          <i class="fas fa-beer relax_icon"></i>
+          <h3 class="relax_desc">Take a break and drink water</h3>
+        </div>
+        <div class="finish"></div>
+      </div>
+      <div class="music">
+        <div class="music_icon_containor">
+          <div class="music_icon"></div>
+
+          <audio src="" id="audio"></audio>
+          <h3 class="music_name">none</h3>
+        </div>
+        <ul class="music_list"></ul>
+      </div>
+      <div class="speaker_icon_container">
+        <i class="speaker-icon-off fas fa-volume-mute"></i>
+        <i class="fas fa-volume-down speaker-icon-on active"></i>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

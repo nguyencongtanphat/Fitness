@@ -1,0 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.main {
+  background-image: url("./imgs/home.png");
+  align-items: center;
+}
+.btn {
+  margin: 20px;
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+  font-weight: 500;
+  font-size: 1.5rem;
+  background-color: rgb(94, 94, 94, 0.8);
+  display: block;
+}
+.option {
+  margin-top: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html {
+  transition: all 0.4 linear;
+}
+body {
+  background-color: #6b6b6b;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: #141414;
+  background-image: url(./imgs/pexels-anush-gorak-1431282.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.header {
+  margin-top: 1rem;
+  text-align: center;
+  color: #fff;
+}
+.header_part_desc {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #adadad;
+}
+.list_exercises {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+.exercise_item {
+  background-color: #fff;
+}
+.exercise_item_process.active {
+  background-color: rgb(202, 0, 0);
+}
+.exercise_item_process {
+  width: 25px;
+  height: 2px;
+  display: block;
+}
+.time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0 0 0;
+}
+.exercise_name {
+  color: #fff;
+
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 80px;
+  font-weight: 400;
+}
+.time_start {
+  margin-bottom: 10px;
+}
+.btn {
+  text-align: center;
+  padding: 10px;
+  max-width: 150px;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background: rgba(105, 105, 136, 0.7);
+  cursor: pointer;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid #fff;
+}
+.btn:active {
+  filter: brightness(0.5);
+}
+.adjustment {
+  display: flex;
+  margin-top: 15px;
+}
+
+.counter_practice,
+.counter_relax {
+  text-shadow: 8px 2px 20px black;
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.counter_relax {
+  color: rgb(88, 255, 88);
+}
+
+.time_pause {
+  margin-right: 15px;
+}
+.introduce {
+  margin-top: 10px;
+  width: 150px;
+  height: 150px;
+  background-position: center;
+  box-shadow: 0 0 0 5px greenyellow;
+  background-size: cover;
+  display: none;
+  border-radius: 50%;
+}
+.finish {
+  height: 100%;
+  width: 400px;
+  top: 0;
+  position: fixed;
+  background-image: url("./imgs/finish.png");
+  background-color: rgb(121, 255, 121);
+  background-position: top center;
+  background-size: cover;
+  display: none;
+}
+
+.relax {
+  color: #fff;
+  text-align: center;
+  display: none;
+}
+.relax_icon {
+  margin: 15px 0;
+  font-size: 3rem;
+  color: aqua;
+  animation: Rotate 1s infinite linear;
+}
+.relax_desc {
+  font-size: 2rem;
+}
+@keyframes Rotate {
+  0% {
+    -webkit-transform: rotate(10deg);
+    color: orangered;
+  }
+  50% {
+    -webkit-transform: rotate(-5deg);
+    color: yellow;
+  }
+  100% {
+    -webkit-transform: rotate(10deg);
+  }
+}
+
+.music {
+  position: fixed;
+  top: 0px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  display: none;
+}
+.music_icon_containor {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.music_icon {
+  height: 40px;
+  width: 40px;
+  box-shadow: 0 0 0 2px rgb(192, 86, 36);
+  background-color: #fff;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+}
+.music_name {
+  color: #fff;
+  font-size: 0.7rem;
+  width: 100px;
+}
+.music_list {
+  display: none;
+  list-style: none;
+  color: #fff;
+  border-radius: 3px;
+  background-color: #adadad;
+  padding: 10px;
+  overflow-y: auto;
+  max-height: 200px;
+}
+.music_list.active {
+  display: block;
+}
+.music_item {
+  width: 200px;
+  padding: 10px;
+  margin: 3px;
+  font-size: 1rem;
+  background-color: rgb(42, 51, 59);
+  border-radius: 3px;
+  cursor: pointer;
+}
+.music_item.active {
+  background-color: rgb(255 91 154);
+}
+
+.speaker-icon-on {
+  color: #fff;
+  display: none;
+}
+.speaker-icon-off {
+  color: #aca0a0;
+  display: none;
+}
+.speaker-icon-off.active,
+.speaker-icon-on.active {
+  display: block;
+  cursor: pointer;
+}
+.speaker_icon_container {
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  padding: 10px;
+  font-size: 1.6rem;
+  display: flex;
+}
