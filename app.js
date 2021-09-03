@@ -159,6 +159,9 @@ function setName_Active_Exercise() {
     console.log("xong set func");
     let finishComponet = $(".finish");
     finishComponet.style.display = "block";
+    if(isOnSpeaker)
+     onSpeaker.click()
+
     finishSound.play();
     finishSound.onended = () => {
       finishSound.play();
